@@ -4,14 +4,18 @@
 
 //For now, make sure the two strings contain the same number of characters!
 
+
+
 let string1 = 'Rutabagas';
 let string2 = 'Chemistry';
 let string1Arr = string1.split("");
 let string2Arr = string2.split("");
 let newStringArr = [];
 let newString = "";
-
-for (let i = 0; i <= string1.length + string2.length; i++) {
+// 
+// string1.length = 9 string2.length = 9| 18 loops
+for (let i = 0; i < ((string1.length + string2.length)/2); i++) {
+  // RC 1 UH 2 TE 3 
   newStringArr.push(string1Arr[i]+string2Arr[i]);
   newString = newStringArr.join("");
 }
